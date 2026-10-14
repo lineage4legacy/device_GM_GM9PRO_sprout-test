@@ -54,6 +54,8 @@
       "Name": "GPUMaxFreq",
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/max_freq",
       "Values": [
+        "750000000",
+        "700000000",
         "647000000",
         "588000000",
         "465000000",
@@ -61,13 +63,15 @@
         "266000000",
         "160000000"
       ],
-      "DefaultIndex": 0,
+      "DefaultIndex": 2,
       "ResetOnInit": true
     },
     {
       "Name": "GPUMinFreq",
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
       "Values": [
+        "750000000",
+        "700000000",
         "647000000",
         "588000000",
         "465000000",
@@ -75,7 +79,8 @@
         "266000000",
         "160000000"
       ],
-      "ResetOnInit": true
+      "ResetOnInit": true,
+      "DefaultIndex": 5
     },
     {
       "Name": "GPUForceRailOn",
@@ -334,7 +339,13 @@
       "PowerHint": "LAUNCH",
       "Node": "GPUMinFreq",
       "Duration": 1000,
-      "Value": "647000000"
+      "Value": "750000000"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "GPUMaxFreq",
+      "Duration": 1000,
+      "Value": "750000000"
     }
   ]
 }
