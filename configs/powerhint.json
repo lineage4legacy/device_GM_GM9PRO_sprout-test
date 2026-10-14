@@ -75,6 +75,7 @@
         "266000000",
         "160000000"
       ],
+      "DefaultIndex": 3,
       "ResetOnInit": true
     },
     {
